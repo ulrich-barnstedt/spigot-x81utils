@@ -1,0 +1,19 @@
+name: X81Utils
+version: '${project.version}'
+main: dev.x81.x81utils.X81utils
+api-version: 1.17
+commands:
+  delwarp:
+    description: Delete a warp
+    usage: /delwarp <name>
+  setwarp:
+    description: Create a warp
+    usage: /setwarp <name>
+  warp:
+    description: Warp to a warp point
+    usage: /warp <name>
+    aliases:
+      - wa
+  toggleframe:
+    description: Toggle the visibility of an item frame
+    usage: /toggleframe
