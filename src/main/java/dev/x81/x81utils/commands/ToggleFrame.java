@@ -22,7 +22,7 @@ public class ToggleFrame implements CommandExecutor {
 
         Entity entity = null;
         for (Entity ent : list) {
-            if (entity instanceof ItemFrame) {
+            if (ent instanceof ItemFrame) {
                 entity = ent;
                 break;
             }
