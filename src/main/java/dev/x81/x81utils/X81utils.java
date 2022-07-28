@@ -1,9 +1,6 @@
 package dev.x81.x81utils;
 
-import dev.x81.x81utils.commands.DelWarp;
-import dev.x81.x81utils.commands.SetWarp;
-import dev.x81.x81utils.commands.ToggleFrame;
-import dev.x81.x81utils.commands.Warp;
+import dev.x81.x81utils.commands.*;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 

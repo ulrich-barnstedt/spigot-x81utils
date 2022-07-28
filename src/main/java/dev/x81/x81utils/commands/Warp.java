@@ -11,11 +11,10 @@ import dev.x81.x81utils.X81utils;
 public class Warp implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (!(sender instanceof Player)) return true;
+        if (!(sender instanceof Player player)) return true;
         if (args.length == 0) return false;
 
         String name = args[0];
-        Player player = (Player) sender;
 
         if (!X81utils.running.getConfig().contains("warps." + name)) {
             sender.sendMessage(ChatColor.RED + "Invalid warp.");

@@ -11,8 +11,7 @@ import org.bukkit.entity.Player;
 public class ToggleFrame implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (!(sender instanceof Player)) return true;
-        Player player = (Player) sender;
+        if (!(sender instanceof Player player)) return true;
         World world = player.getWorld();
         java.util.Collection<Entity> list = world.getNearbyEntities(player.getLocation().add(0, 1, 0), 1, 1, 1);
 
